@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+  head        
+    base(href='/yelp-react/')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='viewport', content='width=device-width')     
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Raleway:400,700,400')
+    link(rel='stylesheet', href='css/normalize.css')
+    link(rel='stylesheet', href='css/skeleton.css')
+    link(rel='stylesheet', href='css/custom.css')
+    script(src="js/reactjs/react.js")
+    script(src="js/reactjs/JSXTransformer.js")
+
+  body
+
+    div.container
+        h1 Yelp
+        include navbar
+
+    div.container
+        div#content
+
+    // third-part libraries
+    script(src="http://code.jquery.com/jquery.min.js")
+    script(src="js/lodash.min.js")
+
+    // our app
+    script(src="js/doctor/list.js" type='text/jsx')
+    script(src="js/doctor/listItem.js" type='text/jsx')
+    script(src="js/doctor/view.js" type='text/jsx')    
+
+    script(src="js/restaurant/list.js" type='text/jsx')
+    script(src="js/restaurant/listItem.js" type='text/jsx')
+    script(src="js/restaurant/view.js" type='text/jsx')    
+
+    script(src="js/user/list.js" type='text/jsx')
+    script(src="js/user/listItem.js" type='text/jsx')
+    script(src="js/user/view.js" type='text/jsx')    
+
+    script(src="js/app.js" type='text/jsx')
