@@ -15,7 +15,7 @@ var UserListItem = React.createClass({
                     {user.name}                    
                 </div>
                 <div className="userReview_Count four columns">
-                    {user.review_count}   
+                    {user.review_count} reviews
                 </div>
                 <div className="userYelping_Since four columns">
                     {user.yelping_since}
