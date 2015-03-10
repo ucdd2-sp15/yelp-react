@@ -1,11 +1,27 @@
 var UserView = React.createClass({
 
+	 getInitialState: function() {
+        return {user: null}
+    },
+
     render: function() {
 
-        return (
-            <div>
-                TODO
-            </div>
-        )
-    }
+        if (this.state.user){
+
+            return ( 
+                <div className="userView" >
+                    <h2 className="userName">
+                        {this.state.user.name}
+                    </h2>
+                    {this.state.user.avg_stars}
+                </div>
+            )
+
+        }else{
+
+            return (
+                <h2>Click an item to see details</h2>
+            )
+        }
+  }
 })
