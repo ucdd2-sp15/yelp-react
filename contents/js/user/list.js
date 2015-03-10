@@ -19,7 +19,7 @@ var UserList = React.createClass({displayName: 'UserList',
         });
     },
 
-    handleListItemClicked: function(business_id){
+    handleListItemClicked: function(user_id){
         var user = _.find(this.state.data, {user_id: user_id})
         this.refs.userView.setState({user:user})
     },

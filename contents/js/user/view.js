@@ -13,7 +13,7 @@ var UserView = React.createClass({
                     <h2 className="userName">
                         {this.state.user.name}
                     </h2>
-                    {this.state.user.avg_stars}
+                    {this.state.user.average_stars}
                 </div>
             )
 
