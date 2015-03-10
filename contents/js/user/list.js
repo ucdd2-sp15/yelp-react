@@ -31,7 +31,7 @@ var UserList = React.createClass({displayName: 'UserList',
         var users = this.state.data.map(function (user) {
         
           return (    
-            <user user={user} onListItemClicked={self.handleListItemClicked}/>
+            <UserListItem user={user} onListItemClicked={self.handleListItemClicked}/>
             )
         })        
 
@@ -41,7 +41,7 @@ var UserList = React.createClass({displayName: 'UserList',
                     {users}
                 </div>
                 <div className="userView six columns">
-                    <userView ref="userView"/>
+                    <UserView ref="userView"/>
                 </div>
             </div>
         )
