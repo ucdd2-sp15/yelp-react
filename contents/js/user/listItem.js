@@ -11,13 +11,13 @@ var UserListItem = React.createClass({
 
         return ( 
             <div className="user row" >
-                <div className="userName six columns" onClick={this.handleClick}>
+                <div className="userName four columns" onClick={this.handleClick}>
                     {user.name}                    
                 </div>
-                <div className="userReview_Count six columns">
+                <div className="userReview_Count four columns">
                     {user.review_count}   
                 </div>
-                <div className="userYelping_Since six columns">
+                <div className="userYelping_Since four columns">
                     {user.yelping_since}
                 </div>
             </div>
