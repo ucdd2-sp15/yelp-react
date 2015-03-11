@@ -9,13 +9,14 @@ var RestaurantListItem = React.createClass({
 
         var restaurant = this.props.restaurant
 
-        return ( 
+        return (
             <div className="restaurant row" >
                 <div className="restaurantName six columns" onClick={this.handleClick}>
-                    {restaurant.name}                    
+                    {restaurant.name}
+
                 </div>
                 <div className="restaurantCity six columns">
-                    {restaurant.city}   
+                    {restaurant.city}
                 </div>
             </div>
         )
