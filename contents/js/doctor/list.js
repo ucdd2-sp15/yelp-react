@@ -26,7 +26,7 @@ var DoctorList = React.createClass({displayName: 'DoctorList',
 
     render: function() {
 
-        var self = this
+        var self = this;
 
         var doctors = this.state.data.map(function (doctor) {
         
