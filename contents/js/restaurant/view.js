@@ -13,7 +13,12 @@ var RestaurantView = React.createClass({
                     <h2 className="restaurantName">
                         {this.state.restaurant.name}
                     </h2>
+                    <h5>
                     {this.state.restaurant.full_address}
+                    </h5>
+                    {this.state.restaurant.stars} stars, {this.state.restaurant.review_count} reviews
+
+                        
                 </div>
             )
         }
