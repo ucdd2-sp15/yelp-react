@@ -1,5 +1,5 @@
 var UserList = React.createClass({
-displayName:'DoctorList',
+displayName:'UserList',
 	getInitialState: function(){ //setting the intial value state of data to []
 		return {data:[]};
 	},
