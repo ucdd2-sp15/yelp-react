@@ -5,15 +5,16 @@ var RestaurantView = React.createClass({
     },
 
     render: function() {
-        
+
         if (this.state.restaurant){
 
-            return ( 
+            return (
                 <div className="restaurantView" >
                     <h2 className="restaurantName">
                         {this.state.restaurant.name}
                     </h2>
-                    {this.state.restaurant.full_address}
+                    <p> {this.state.restaurant.full_address} </p>
+                    <p> Stars: {this.state.restaurant.stars} </p>
                 </div>
             )
 
