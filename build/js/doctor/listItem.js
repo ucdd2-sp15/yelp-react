@@ -10,13 +10,27 @@ var DoctorListItem = React.createClass({
         var doctor = this.props.doctor
 
         return ( 
-            <div className="doctor row" >
-                <div className="doctorName six columns" onClick={this.handleClick}>
-                    {doctor.name}                    
-                </div>
-                <div className="doctorCity six columns">
-                    {doctor.city}   
-                </div>
+            <div className="doctor" >
+                <table className="u-full-width">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>State</th>
+                            <th>City</th>
+                            <th>Rating</th>
+                            <th>Open</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#" onClick={this.handleClick}>{doctor.name}</a></td>
+                            <td> {doctor.state} </td>
+                            <td> {doctor.city} </td>
+                            <td> {doctor.stars + " Stars"} </td>
+                            <td> {doctor.open} </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         )
   }

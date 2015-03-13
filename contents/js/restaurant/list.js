@@ -20,7 +20,7 @@ var RestaurantList = React.createClass({displayName: 'RestaurantList',
     },
 
     handleListItemClicked: function(restaurant_id) {
-        restaurant = _.find(this.state.data, {business_id: business_id})
+        var restaurant = _.find(this.state.data, {business_id: restaurant_id})
         this.refs.restaurantView.setState({restaurant: restaurant})
     },
 
@@ -40,8 +40,8 @@ var RestaurantList = React.createClass({displayName: 'RestaurantList',
                 <div className="restaurantList six columns">
                     {restaurants}
                 </div>
-                <div className="doctorView six columns">
-                    <RestaurantView refs="restaurantView"/>
+                <div className="restaurantView six columns">
+                    <RestaurantView ref="restaurantView"/>
                 </div>
             </div>
         )
