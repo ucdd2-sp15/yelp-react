@@ -3,7 +3,7 @@ var RestaurantList = React.createClass({displayName: 'RestaurantList',
     getInitialState: function() {
         return {data: []};
     },
-  
+
     componentDidMount: function() {
         $.ajax({
             url: this.props.url,
@@ -29,15 +29,21 @@ var RestaurantList = React.createClass({displayName: 'RestaurantList',
         var self = this
 
         var restaurants = this.state.data.map(function (restaurant) {
-        
-          return (    
+
+          return (
             <RestaurantListItem restaurant={restaurant} onListItemClicked={self.handleListItemClicked}/>
             )
-        })        
+        })
 
         return (
             <div className="restaurantPage">
                 <div className="restaurantList six columns">
+                    <div className="six columns">
+                        <h4> Name </h4>
+                    </div>
+                    <div className="six columns">
+                        <h4> Location</h4>
+                    </div>
                     {restaurants}
                 </div>
                 <div className="restaurantView six columns">
