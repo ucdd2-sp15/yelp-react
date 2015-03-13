@@ -11,7 +11,7 @@ var RestaurantListItem = React.createClass({
         var resOpen = (restaurant.open) ? "Open" : "Closed"
 
         return (
-            <div className="doctor">
+            <div className="restaurant">
                 <table className="u-full-width">
                     <thead>
                         <tr>
