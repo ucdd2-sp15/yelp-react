@@ -8,6 +8,7 @@ var RestaurantListItem = React.createClass({
     render: function() {
         
         var restaurant = this.props.restaurant
+        var resOpen = (restaurant.open) ? "Open" : "Closed"
 
         return (
             <div className="doctor">
@@ -27,7 +28,7 @@ var RestaurantListItem = React.createClass({
                             <td> {restaurant.state} </td>
                             <td> {restaurant.city} </td>
                             <td> {restaurant.stars + " Stars"} </td>
-                            <td> {restaurant.open} </td>
+                            <td> {resOpen} </td>
                         </tr>
                     </tbody>
                 </table>
