@@ -39,7 +39,7 @@ var DoctorList = React.createClass({displayName: 'DoctorList',
             <div className="doctorPage">
                 <div className="doctorList six columns">
                     <div className="six columns">
-                        <h4> Doctor Name </h4>
+                        <h4> Name </h4>
                     </div>
                     <div className="six columns">
                         <h4> Location </h4>
