@@ -13,7 +13,10 @@ var DoctorView = React.createClass({
                     <h2 className="doctorName">
                         {this.state.doctor.name}
                     </h2>
-                    {this.state.doctor.full_address}
+                    <b> Rating : </b> {this.state.doctor.stars}  stars<br/>   
+                    <b> Address : </b> {this.state.doctor.full_address} <br/>
+                    <b> Type : </b> {this.state.doctor.type} <br/>   
+                    <b> Review count : </b> {this.state.doctor.review_count} <br/>
                 </div>
             )
 
