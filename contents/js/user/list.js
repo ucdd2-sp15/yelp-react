@@ -3,7 +3,7 @@ var UserList = React.createClass({displayName: 'UserList',
     getInitialState: function() {
         return {data: []};
     },
-  
+
     componentDidMount: function() {
         $.ajax({
             url: this.props.url,
@@ -29,15 +29,21 @@ var UserList = React.createClass({displayName: 'UserList',
         var self = this
 
         var user = this.state.data.map(function (user) {
-        
-          return (    
+
+          return (
             <UserListItem user={user} onListItemClicked={self.handleListItemClicked}/>
             )
-        })        
+        })
 
         return (
             <div className="userPage">
                 <div className="userList six columns">
+                  <div className="six columns">
+                    <h2>User< /h2>
+                  </div>
+                  <div className="six columns">
+                    <h2>Average rating< /h2>
+                  </div>
                     {user}
                 </div>
                 <div className="userView six columns">
