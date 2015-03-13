@@ -31,7 +31,7 @@ var DoctorList = React.createClass({displayName: 'DoctorList',
         var doctors = this.state.data.map(function (doctor) {
         
           return (    
-            <DoctorListItem doctor={doctor} onListItemClicked={self.handleListItemClicked}/>
+                <DoctorListItem doctor={doctor} onListItemClicked={self.handleListItemClicked}/>
             )
         })        
 
