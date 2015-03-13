@@ -21,7 +21,6 @@ var RestaurantList = React.createClass({displayName: 'RestaurantList',
 
     handleListItemClicked: function(restaurant_id) {
         var restaurant = _.find(this.state.data, {business_id: restaurant_id})
-        console.log('this.refs: ',this.refs)
         this.refs.restaurantView.setState({restaurant: restaurant})
     },
 
@@ -42,7 +41,7 @@ var RestaurantList = React.createClass({displayName: 'RestaurantList',
                     {restaurants}
                 </div>
                 <div className="restaurantView six columns">
-                    <RestaurantView refs="restaurantView"/>
+                    <RestaurantView ref="restaurantView"/>
                 </div>
             </div>
         )
