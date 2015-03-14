@@ -5,15 +5,62 @@ var DoctorView = React.createClass({
     },
 
     render: function() {
-        
+
         if (this.state.doctor){
 
             return ( 
-                <div className="doctorView" >
-                    <h2 className="doctorName">
-                        {this.state.doctor.name}
-                    </h2>
-                    {this.state.doctor.full_address}
+                <div className="doctorView examplegrid" >
+                    <div className="twelve columns" >
+                        
+
+                        <div className="row" >
+
+                            <p className="doctorName name twelve columns" >
+                                {this.state.doctor.name}
+                            </p>
+                        </div>
+
+
+
+                        <div className="row" >
+                            <h6 className="three columns" >
+                                    Address: 
+                            </h6>
+
+                            <h6 className="nine columns" >
+                                {this.state.doctor.full_address}
+                            </h6>
+
+                        </div>
+
+                        <div className="row" >
+
+                            <h6 className="three columns">
+                                Category: 
+                            </h6>
+
+                            <h6 className="nine columns">
+                                {this.state.doctor.categories}
+                            </h6>
+
+                        </div>
+
+                        <div className="row" >
+
+                            <h6 className="three columns">
+                                Stars: 
+                            </h6>
+
+                            <h6 className="nine columns">
+                                {this.state.doctor.stars}
+                            </h6>
+
+                        </div>
+
+
+
+                    </div>
+
                 </div>
             )
 
