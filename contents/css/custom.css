@@ -11,10 +11,17 @@ img {
 	border: 1px grey solid;
 }
 
-#example-grid .columns, #example-grid .column{
-	background-color: #eee;
+.examplegrid .columns, #examplegrid .column{
+	background-color: #D8D9D0;
 	border-radius: 4px;
 	margin-bottom: 3px;
 	border: 1px #aaa solid;
 	padding: 2px;
+}
+
+.name {
+	background-color: #33403B;
+	font-size:1.5em;
+	color:#fff;
+	text-align: center;
 }

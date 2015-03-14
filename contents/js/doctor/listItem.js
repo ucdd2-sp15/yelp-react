@@ -11,9 +11,9 @@ var DoctorListItem = React.createClass({
 
         return ( 
             <div className="doctor row" >
-                <div className="doctorName six columns" onClick={this.handleClick}>
+                <a className="doctorName six columns" onClick={this.handleClick}>
                     {doctor.name}                    
-                </div>
+                </a>
                 <div className="doctorCity six columns">
                     {doctor.city}   
                 </div>
